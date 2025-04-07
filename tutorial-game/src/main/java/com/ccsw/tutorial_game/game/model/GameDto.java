@@ -1,5 +1,8 @@
 package com.ccsw.tutorial_game.game.model;
 
+import com.ccsw.tutorial_game.author.model.AuthorDto;
+import com.ccsw.tutorial_game.category.model.CategoryDto;
+
 /**
  * @author ccsw
  *
@@ -12,9 +15,9 @@ public class GameDto {
 
     private String age;
 
-    private Long idCategory;
+    private CategoryDto category;
 
-    private Long idAuthor;
+    private AuthorDto author;
 
     /**
      * @return id
@@ -65,35 +68,35 @@ public class GameDto {
     }
 
     /**
-     * @return idCategory
+     * @return category
      */
-    public Long getIdCategory() {
+    public CategoryDto getCategory() {
 
-        return this.idCategory;
+        return this.category;
     }
 
     /**
-     * @param idCategory new value of {@link #getIdCategory}.
+     * @param category new value of {@link #getCategory}.
      */
-    public void setIdCategory(Long idCategory) {
+    public void setCategory(CategoryDto category) {
 
-        this.idCategory = idCategory;
+        this.category = category;
     }
 
     /**
-     * @return idAuthor
+     * @return author
      */
-    public Long getIdAuthor() {
+    public AuthorDto getAuthor() {
 
-        return this.idAuthor;
+        return this.author;
     }
 
     /**
-     * @param idAuthor new value of {@link #getIdAuthor}.
+     * @param author new value of {@link #getAuthor}.
      */
-    public void setIdAuthor(Long idAuthor) {
+    public void setAuthor(AuthorDto author) {
 
-        this.idAuthor = idAuthor;
+        this.author = author;
     }
 
 }
